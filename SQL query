@@ -1,0 +1,10 @@
+SELECT 
+    rewarditem.brandCode,
+    COUNT(DISTINCT rewarditem.receiptId) AS receipt_num
+FROM rewarditem
+JOIN Receipts ON Receipts.receiptId = rewarditem.receiptId
+WHERE Receipts.purchaseDate >= DATE_TRUNC('month', CURRENT_DATE) - INTERVAL '1 month'
+AND  Receipts.purchaseDate < DATE_TRUNC('month', CURRENT_DATE)
+GROUP BY rewarditem.brandCode
+ORDER BY receipt_num DESC
+LIMIT 5;
