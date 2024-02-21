@@ -1,0 +1,23 @@
+Subject: Strategic Discussion on Data Quality and Systems
+
+Hello everyone,
+
+I'm reaching out to discuss our current project involving the analysis and optimization of our rewards data. Having delved into the data over the past few weeks, I've identified several areas where further clarity and strategic decisions could greatly enhance our outcomes.
+
+1. Is there a complete catalog of our items? Accessing detailed item information could help streamline our database and reduce storage needs.
+
+2.Through exploratory data analysis and routine data validation checks, I've noticed significant missing values in all three tables, duplicates are there for eg. duplicate user_id records marked by variations in login and creation times which suggest a need to reevaluate our data collection methodologies, and also anomalies, such as extreme values in bonus points earned which need to be validated. The varying date formats and data stored in embedded dictionaries, like 'createdate', complicate analysis and increase data wrangling efforts, so there is a need for standardization across our datasets. 
+
+3.  Missing value issue particularly in the rewardsReceiptItemList, where many items lack an associated barCode is important to resolve, as understanding the exact relationship between itemNumber, brandCode, and barCode is crucial for designing our database accurately. Could you provide insights into this?
+
+
+4.Would incorporating additional datasets or variables, perhaps related to market trends or detailed product attributes, be possible? This could enrich our analysis and provide deeper insights.
+
+5.As we scale, I anticipate challenges related to data processing speed and storage efficiency. I propose discussing the feasibility of integrating more scalable solutions, such as NoSQL databases, which are good at handling large volumes of JSON-formatted data.
+
+I would love to discuss these points further and schedule a time to elaborate on these observations.
+
+Looking forward to hearing from you.
+
+Best regards,
+Anmol sharma
